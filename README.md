@@ -1,20 +1,33 @@
-## PackPal - Travel Packing List Generator
+# PackPal - Travel Packing List Generator
 
-Batool Raza  
-110096948
+**Batool Raza**  
+110096948  
 University of Windsor  
 World Wide Web Information
 
+---
+
 ## Project Overview
 
-PackPal is a dynamic, PHP/MySQL-based web application that helps users plan trips and generate customized packing lists for different types of travel: Beach, City, Hiking, and Winter. It includes admin functionality, responsive design, and multimedia integration.
+**PackPal** is a dynamic PHP/MySQL-based web application that helps users plan trips and generate customized packing lists for different travel types: **Beach**, **City**, **Hiking**, and **Winter**. Features include:
+
+- Responsive design  
+- Admin dashboard  
+- Multimedia integration  
+- User authentication  
+- SEO optimization
+
+---
 
 ## Live Website
 
-http://raza43.myweb.cs.uwindsor.ca/PackPal
+[http://raza43.myweb.cs.uwindsor.ca/PackPal](http://raza43.myweb.cs.uwindsor.ca/PackPal)
+
+---
 
 ## Folder Structure
 
+```
 PackPal/
 ├── assets/
 │   ├── css/                 # Main and theme CSS files
@@ -59,18 +72,19 @@ PackPal/
 ├── privacy.html             # Privacy policy
 ├── packpal.sql              # MySQL export file
 └── README.md                # This file
+```
 
 ## How to Install
 
 ## Steps:
 
 1. Upload Project Files
-   - Download or clone the full PackPal project folder.
-   - Upload all files to your hosting server’s root folder (e.g., public_html or a folder like /PackPal).
-   - Ensure that the full folder structure is preserved, including:
-         - includes/
-         - assets/ (with subfolders for css, js, images)
-         - All .php, .html, and .sql files.
+   - Download or clone the full **PackPal** project folder.  
+   - Upload all files to your hosting server’s root folder (e.g., `public_html` or a folder like `/PackPal`).  
+   - Ensure that the full folder structure is preserved, including:  
+     - `includes/`  
+     - `assets/` (with subfolders for `css/`, `js/`, `images/`)  
+     - All `.php`, `.html`, and `.sql` files  
 
 2. Create and Import the Database
    - Log into your hosting service’s phpMyAdmin.
@@ -79,24 +93,26 @@ PackPal/
    - This will create the necessary tables like users, trips, and site_settings.
 
 3. Configure Database Connection
-   - Open the file includes/db.php.
-   - Update the database connection settings to match your server’s credentials:
-            $host = 'localhost';          // or your host name
-            $username = 'your_db_user';   // your MySQL username
-            $password = 'your_db_pass';   // your MySQL password
-            $database = 'packpal_db';     // your database name
-   - Save the changes.
+   - Open the file `includes/db.php`.  
+   - Update the database connection settings to match your server’s credentials:  
+     ```php
+     $host = 'localhost';        // or your host name  
+     $username = 'your_db_user'; // your MySQL username  
+     $password = 'your_db_pass'; // your MySQL password  
+     $database = 'packpal_db';   // your database name  
+     ```  
+   - Save the changes.  
 
 4. Admin Login Credentials
-   - A default admin account is included so you can log into the admin dashboard:
-         - Username: ADMIN
-         - Email: packpal@gmail.com
-         - Password: 12345
-   - Once logged in, you can:
-      - Change the site’s theme
-      - Disable/enable user accounts
-      - View and delete user trips
-      - Monitor site activity
+   - A default admin account is included so you can log into the admin dashboard:  
+     - **Username:** ADMIN  
+     - **Email:** packpal@gmail.com  
+     - **Password:** 12345  
+   - Once logged in, you can:  
+     - Change the site’s theme  
+     - Disable/enable user accounts  
+     - View and delete user trips  
+     - Monitor site activity  
 
 5. Launch the Website
    - Open your browser and go to the URL where you uploaded the project.
